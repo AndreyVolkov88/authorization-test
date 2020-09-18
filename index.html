@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="form, validation" />
+    <meta name="author" content="Volkov Andrey" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Authorization</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header header__margin">
+        <div class="header__logo-content">
+          <img src="logo.png" alt="логотип мозг" class="header__logo" />
+          <h1 class="header__title">Портал&nbsp;НПР&nbsp;РГСУ</h1>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a
+                href="https://rgsu.net/about/profkom/allnews/"
+                class="menu__link"
+                >Новости</a
+              >
+            </li>
+            <li class="menu__list-item">
+              <a href="https://rgsu.net/about/direction/" class="menu__link"
+                >Преподаватели</a
+              >
+            </li>
+            <li class="menu__list-item">
+              <a href="https://rgsu.net/about/job/" class="menu__link"
+                >Вакансии</a
+              >
+            </li>
+            <li class="menu__list-item">
+              <a
+                href="https://rgsu.net/press-centre/warning/warning_105.html"
+                class="menu__link"
+                >Объявления</a
+              >
+            </li>
+            <li class="menu__list-item">
+              <a
+                href="https://rgsu.net/about/antiterror/event/"
+                class="menu__link"
+                >Мероприятия</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="sign-in">
+          <div class="sign-in__img"></div>
+          <p class="sign-in__text">Вход на сайт</p>
+        </div>
+      </header>
+      <section class="authorization">
+        <div class="overlay__lower"></div>
+        <div class="overlay__upper"></div>
+        <div class="authorization authorization__margin">
+          <ul class="authorization__list">
+            <li class="authorization__title authorization__item">
+              Авторизация
+            </li>
+            <li class="authorization__title authorization__registration">
+              Регистрация
+            </li>
+          </ul>
+
+          <form class="form__authorization">
+            <div class="form__main-container">
+              <label for="email" class="form__label"
+                >Ваш email <span class="form__span">*</span></label
+              >
+              <input
+                class="form__item form__item_el_email"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="  Укажите адрес электронной почты"
+              />
+              <label for="heading" class="form__label"
+                >Введите пароль <span class="form__span">*</span></label
+              >
+              <input
+                class="form__item form__item_el_password"
+                type="password"
+                id="heading"
+                name="heading"
+                placeholder="  *****"
+                required
+              />
+            </div>
+            <div>
+              <button class="form__btn-add" type="submit">Добавить запись</button>
+              <a href="#" class="form__forgot-your-password">Забыли пароль?</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

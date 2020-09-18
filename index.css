@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  background-color: rgba(52, 100, 224, 1);
+  color: #fff;
+  width: 1440px;
+  min-height: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 14px;
+  min-height: 44px;
+}
+
+.header__margin {
+  margin: 0 64px 121px 45px;
+}
+
+.header__logo-content {
+  display: flex;
+  align-items: center;
+  margin-right: 141px;
+}
+
+.header__logo {
+  margin-right: 16px;
+}
+.header__title {
+  width: 190px;
+  height: 28px;
+  text-align: center;
+  font-family: Russia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin-right: 161px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+.menu__list-item {
+  margin-right: 47px;
+}
+.menu__link {
+  width: 66px;
+  height: 21px;
+  color: #9cbaf0;
+  text-decoration: none;
+  font-family: Russia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.menu__link:last-of-type {
+  margin-right: 0;
+}
+
+.menu__link:hover {
+  transition: color 1s linear;
+  color: #fff;
+}
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 175px;
+  height: 42px;
+  background-color: #1740aa;
+  border-radius: 50px;
+}
+
+.sign-in__text {
+  font-family: Russia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.sign-in:hover .sign-in__text {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.sign-in__img {
+  background-image: url(sing-in.png);
+  margin-right: 17px;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  transition: transform 0.4s ease-out;
+}
+
+.sign-in:hover .sign-in__img {
+  transform: translate(10px, 0);
+}
+
+.authorization {
+  width: 490px;
+  height: 408px;
+  background: #ffffff;
+  border-radius: 4px;
+  z-index: 3;
+  position: relative;
+  overflow: visible;
+}
+
+.authorization__margin {
+  margin: 0 auto;
+}
+
+.authorization__list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto 41px;
+  width: 300px;
+  padding-top: 39px;
+  list-style: none;
+  text-align: center;
+  z-index: 3;
+}
+
+.authorization__title {
+  font-family: Russia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.authorization__item {
+  color: #3464e0;
+  margin-right: 20px;
+}
+
+.authorization__registration {
+  color: #c3cad6;
+}
+
+.form__authorization {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 340px;
+}
+.form__label {
+  margin-bottom: 6px;
+  font-family: Russia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #444444;
+}
+
+.form__item {
+  width: 338px;
+  height: 44px;
+  border: 1px solid #f1f4f9;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form__item_el_password {
+  margin-bottom: 42px;
+}
+.form__span {
+  color: red;
+}
+
+.form__btn-add {
+  width: 157px;
+  height: 44px;
+  margin-right: 57px;
+  background: #3464e0;
+  border: 1px solid #3464e0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Russia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.form__btn-add:hover {
+  transform: scale(1.03);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.form__forgot-your-password {
+  width: 123px;
+  height: 26px;
+  font-family: Russia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #3464e0;
+  text-decoration: none;
+}
+
+.form__forgot-your-password:hover {
+  opacity: 0.8;
+}
+
+.overlay__lower {
+  width: 461px;
+  height: 330px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  z-index: 1;
+  position: absolute;
+  top: -38px;
+  left: 14px;
+}
+
+.overlay__upper {
+  width: 472px;
+  height: 298px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  z-index: 2;
+  position: absolute;
+  top: -21px;
+  left: 9px;
+}
