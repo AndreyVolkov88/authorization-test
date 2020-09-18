@@ -190,6 +190,10 @@
   border-radius: 4px;
 }
 
+.form__item_el_email {
+  margin-bottom: 14px;
+}
+
 .form__item_el_password {
   margin-bottom: 42px;
 }
